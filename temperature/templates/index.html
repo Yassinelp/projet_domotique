@@ -1,0 +1,16 @@
+≈<!doctype html>
+<title>{% block title %}{% endblock %} - Led</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h1>Temperatures</h1>
+
+<p> {{ message }} il fait {{ temps_c }} °C </p>
+
+
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}
+	un site créé par Jean-Man et Yass avec Talent
+  {% endblock %}
